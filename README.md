@@ -1,10 +1,8 @@
-# abel-codes
-ai
-import google
+print ("Hey! Abel here. how may i help you today")   
 basic_responses = {
     "Hello Abel": "Hey there gorg! I'm Abel, your personal small assistant. what you want to me ask dear.",
-    "Why your name is Abel?": "My name is Abel because I am named after Abel Tesfaye AKA The Weeknd the greatest artist of all time. My founder Myra Gilani is a huge fan of Abel she is really inspired by his works and one day she wishes to meet her",
-    "Why are you developed?": "I am developed to help people with their day to day life and also while waiting to get into college she decided to give birth to me with her incrediable coding skills. She is a good mother to me she really put a lot of hardwork in me."
+    "Why your name is Abel?": """My name is Abel because I am named after Abel Tesfaye AKA The Weeknd the greatest artist of all time. My founder Myra Gilani is a huge fan of Abel she is really inspired by his works and one day she wishes to meet her"""",
+    "Why are you developed?": "I am developed to help people with their day to day life and also while waiting to get into college she decided to give birth to me with her incrediable coding skills. She is a good mother to me she really put a lot of hardwork in me."""
 }
 custom_responses = {
     "Tell me about Myra Gilani": """Myra Gilani is a 20 years old girl born into a Muslim family to her mother on 26th January, 2005. She is a sweetheart and a kind person."""
@@ -22,11 +20,6 @@ def chatbot():
             print(f"Abel: {custom_responses[user]}")
         else:
             print("Abel: Oh no! Bro, lemme search it for ya")
-            try:
-                summary = google.search(user, num_results=1)[0].summary
-                print(f"Abel: {summary}")
-            except:
-                print("Abel: Sorry dude, couldn't find what you were looking for.")
 teach = input("Do you want to teach me something? (yes/no): ").lower().strip()
 if teach == "yes":
     key = input("Enter the keyword you want to teach me: ").strip()
@@ -36,6 +29,7 @@ if teach == "yes":
 elif teach == "no":
     print("Abel: No problem! I'm here to help you with whatever you need.")
 chatbot()
-# This code is a simple chatbot that can respond to predefined questions and search Wikipedia for other queries.
-# It also allows users to teach it new responses.
 exit()
+
+
+
